@@ -72,7 +72,7 @@ button:focus-visible {
 .container{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    column-gap: 1rem;
+    column-gap: 30px;
     row-gap: 3rem;
     padding: 1rem;
 }
@@ -102,14 +102,12 @@ button:focus-visible {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   overflow: hidden;
-  margin: 20px;
-  width: 300px; /* Adjust width as needed */
 }
 
 .movie img {
-  width: 100%; /* Make image fill the container */
-  height: auto; /* Keep image aspect ratio */
-  border-bottom: 1px solid #eee; /* Add a subtle line between the image and the content */
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #eee;
 }
 
 .movie .info {
@@ -120,32 +118,60 @@ button:focus-visible {
 .movie .info h3 {
   margin: 0;
   padding: 0;
-  font-size: 24px; /* Adjust title font size */
-  color: #444; /* Title color */
+  font-size: 24px;
+  color: #444;
 }
 
 .movie .info .rating {
-  font-size: 18px; /* Adjust rating label font size */
-  color: #666; /* Rating label color */
-  margin-right: 5px; /* Space between rating label and value */
+  font-size: 18px;
+  color: #666;
+  margin-right: 5px;
 }
 
 .movie .info span {
-  font-size: 18px; /* Adjust rating value font size */
+  font-size: 18px;
   font-weight: bold;
 }
 
 .movie .over {
   padding: 15px;
-  color: #666; /* Overview text color */
+  color: #666;
 }
 
 .movie .over h2 {
-  font-size: 20px; /* Adjust overview title font size */
-  color: #444; /* Overview title color */
+  font-size: 20px;
+  color: #444;
 }
 
 .movie .over p {
-  font-size: 16px; /* Adjust overview paragraph font size */
-  line-height: 1.5; /* Adjust line height for better readability */
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.pagination{
+  display: flex;
+  justify-content: end;
+  margin-top: 20px;
+  gap: 30px;
+  margin-right: 40px;
+  margin-bottom: 20px;
+}
+.desc{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+label {
+  margin-left: 20px;
+  font-size: 16px;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+select {
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  cursor: pointer;
 }
