@@ -1,3 +1,10 @@
+Curlyk is a web application that allows users to view movies. It is built using React, TypeScript, and Vite. The application uses the [The Movie Database (TMDb) API](https://www.themoviedb.org/documentation/api) to fetch movie data.
+
+Features:
+- View popular movies
+- Sort by popularity, release date, and rating, title
+- Pagination
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
