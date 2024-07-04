@@ -29,7 +29,9 @@ body {
   min-width: 320px;
   min-height: 100vh;
 }
-
+#root{
+  width: 100%;
+}
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
@@ -65,4 +67,85 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    column-gap: 1rem;
+    row-gap: 3rem;
+    padding: 1rem;
+}
+.movie_app {
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.header {
+  text-align: center;
+  color: #333;
+}
+
+.text {
+  font-weight: bold;
+  color: aliceblue;
+}
+.loading {
+  text-align: center;
+  font-size: 24px;
+  color: #666;
+}
+
+.movie {
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 20px;
+  width: 300px; /* Adjust width as needed */
+}
+
+.movie img {
+  width: 100%; /* Make image fill the container */
+  height: auto; /* Keep image aspect ratio */
+  border-bottom: 1px solid #eee; /* Add a subtle line between the image and the content */
+}
+
+.movie .info {
+  padding: 15px;
+  color: #333;
+}
+
+.movie .info h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 24px; /* Adjust title font size */
+  color: #444; /* Title color */
+}
+
+.movie .info .rating {
+  font-size: 18px; /* Adjust rating label font size */
+  color: #666; /* Rating label color */
+  margin-right: 5px; /* Space between rating label and value */
+}
+
+.movie .info span {
+  font-size: 18px; /* Adjust rating value font size */
+  font-weight: bold;
+}
+
+.movie .over {
+  padding: 15px;
+  color: #666; /* Overview text color */
+}
+
+.movie .over h2 {
+  font-size: 20px; /* Adjust overview title font size */
+  color: #444; /* Overview title color */
+}
+
+.movie .over p {
+  font-size: 16px; /* Adjust overview paragraph font size */
+  line-height: 1.5; /* Adjust line height for better readability */
 }
